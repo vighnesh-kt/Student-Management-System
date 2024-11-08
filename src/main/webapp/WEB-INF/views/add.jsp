@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Staff Information</title>
+  <title>Student Information</title>
   <style>
     /* Global Styles */
     body {
@@ -15,10 +15,10 @@
       height: 100vh;
       margin: 0;
     }
-	
-	.error{
-		color:red;
-	}
+    
+    .error{
+    color:red;
+    }
 
     /* Form Styles */
     .form-container {
@@ -96,10 +96,11 @@
   </style>
 </head>
 <body>
+	
   <div class="form-container">
-    <h1>Staff Information</h1>
-	<h3 class="error">${registerFailed}</h3>
-    <form action="register" method="post">
+  <h1>Student Information</h1>
+  <h3 class="error">${msg }</h3>
+    <form action="save" method="post">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -112,15 +113,11 @@
         <label for="phone">Phone</label>
         <input type="tel" id="phone" name="phone" required>
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit" class="submit-button">Submit</button>
+      <button type="submit" class="submit-button">Save</button>
     </form>
 	
 	<div class="form-footer">
-	      Have an account? <a href="/login">Sign In</a>
+	      Go to Home Page? <a href="/home">Home</a>
 	    </div>
   </div>
 </body>

@@ -56,7 +56,8 @@
     }
 	
 	.error{
-		colour:"red"
+		text-align:center;
+		color:red;
 	}
 
     .form-group input:focus {
@@ -101,36 +102,8 @@
 <body>
   <div class="form-container">
     <h1>Login</h1>
-	
-	<% 
-	    String successMessage = (String) request.getAttribute("registerSuccess");
-	    String failedMessage = (String) request.getAttribute("registerFailed");
-	      %>
-	
-		  <c:if test="${not empty successMessage}">
-		              <h3 class="success">${successMessage}</h3>
-		          </c:if>
-
-		          <c:if test="${not empty failedMessage}">
-		              <h3 class="error">${failedMessage}</h3>
-		          </c:if>
-
-				  <% 
-				       String successMsg = (String) request.getAttribute("registerSuccess");
-				       String errorMsg = (String) request.getAttribute("registerFailed");
-
-				       if (successMsg != null) { 
-				       %>
-				           <h3 class="message"><%= successMsg %></h3>
-				       <% 
-				       } else if (errorMsg != null) { 
-				       %>
-				           <h3 class="error"><%= errorMsg %></h3>
-				       <% 
-				       } 
-				       %>
-
-    <form>
+    <h3 class="error">${msg}</h3>
+    <form action="login" method="post">
       <div class="form-group">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
@@ -142,7 +115,7 @@
       <button type="submit" class="submit-button">Login</button>
     </form>
     <div class="form-footer">
-      Don't have an account? <a href="#">Sign up</a>
+      Don't have an account? <a href="/">Sign up</a>
     </div>
   </div>
 </body>
