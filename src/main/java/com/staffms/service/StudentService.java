@@ -1,4 +1,4 @@
-package com.p1.service;
+package com.staffms.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.p1.dao.StudentDao;
-import com.p1.entity.Student;
+import com.staffms.dao.StudentDao;
+import com.staffms.entity.Student;
 
 @Service
 public class StudentService {

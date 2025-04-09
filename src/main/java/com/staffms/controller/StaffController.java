@@ -1,4 +1,4 @@
-package com.p1.controller;
+package com.staffms.controller;
 
 import java.util.List;
 
@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import org.springframework.web.servlet.ModelAndView;
 
-import com.p1.dto.EmailDto;
-import com.p1.entity.Staff;
-import com.p1.entity.Student;
-import com.p1.service.EmailService;
-import com.p1.service.StaffService;
-import com.p1.service.StudentService;
+import com.staffms.dto.EmailDto;
+import com.staffms.entity.Staff;
+import com.staffms.entity.Student;
+import com.staffms.service.EmailService;
+import com.staffms.service.StaffService;
+import com.staffms.service.StudentService;
 
 import jakarta.servlet.http.HttpServletRequest;
 

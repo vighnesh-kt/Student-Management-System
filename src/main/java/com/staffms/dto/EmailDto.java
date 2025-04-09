@@ -1,4 +1,4 @@
-package com.p1.dto;
+package com.staffms.dto;
 
 import lombok.Data;
 

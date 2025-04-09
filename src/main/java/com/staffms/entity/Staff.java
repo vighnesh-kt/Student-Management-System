@@ -1,4 +1,4 @@
-package com.p1.entity;
+package com.staffms.entity;
 
 import java.time.LocalDateTime;
 

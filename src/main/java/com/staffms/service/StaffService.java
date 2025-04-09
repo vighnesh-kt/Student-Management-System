@@ -1,12 +1,12 @@
-package com.p1.service;
+package com.staffms.service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.p1.dao.StaffDao;
-import com.p1.entity.Staff;
+import com.staffms.dao.StaffDao;
+import com.staffms.entity.Staff;
 
 @Service
 public class StaffService {

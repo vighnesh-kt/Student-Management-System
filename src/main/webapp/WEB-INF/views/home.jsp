@@ -1,5 +1,5 @@
 <!doctype html>
-<%@page import="com.p1.entity.Student"%>
+<%@page import="com.staffms.entity.Student"%>
 <%@page import="java.util.List"%>
 <html lang="en">
 <head>

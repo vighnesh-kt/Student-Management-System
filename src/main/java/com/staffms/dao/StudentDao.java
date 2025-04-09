@@ -1,4 +1,4 @@
-package com.p1.dao;
+package com.staffms.dao;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.p1.entity.Student;
-import com.p1.repository.StudentRepository;
+import com.staffms.entity.Student;
+import com.staffms.repository.StudentRepository;
 
 @Repository
 public class StudentDao {

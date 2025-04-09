@@ -1,12 +1,12 @@
-package com.p1.dao;
+package com.staffms.dao;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.p1.entity.Staff;
-import com.p1.repository.StaffRepository;
+import com.staffms.entity.Staff;
+import com.staffms.repository.StaffRepository;
 
 @Repository
 public class StaffDao {
